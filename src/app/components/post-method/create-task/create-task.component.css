@@ -1,0 +1,32 @@
+.overlay {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+.overlay .popup {
+  width: 70%;
+  padding: 20px;
+  background: #a3a3a3;
+  border-radius: 5px;
+  position: relative;
+}
+.overlay fa-icon {
+  padding: 8px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.overlay fa-icon:hover {
+  background: #e7e6e6;
+}
+.overlay input, .overlay select, .overlay textarea {
+  background: #e7e6e6;
+}
+.overlay input.ng-invalid.ng-touched, .overlay input.ng-invalid.ng-touched, .overlay input.ng-invalid.ng-touched, .overlay select.ng-invalid.ng-touched, .overlay select.ng-invalid.ng-touched, .overlay select.ng-invalid.ng-touched, .overlay textarea.ng-invalid.ng-touched, .overlay textarea.ng-invalid.ng-touched, .overlay textarea.ng-invalid.ng-touched {
+  border: 2px solid #e44949;
+}
+.overlay input.ng-valid, .overlay input.ng-valid, .overlay input.ng-valid, .overlay select.ng-valid, .overlay select.ng-valid, .overlay select.ng-valid, .overlay textarea.ng-valid, .overlay textarea.ng-valid, .overlay textarea.ng-valid {
+  border: 2px solid #409940;
+}/*# sourceMappingURL=create-task.component.css.map */
