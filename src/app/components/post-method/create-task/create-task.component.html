@@ -6,10 +6,10 @@
         </div>
         <form class="form-group d-flex flex-column gap-2 my-4" #myForm="ngForm" (ngSubmit)="handleAddOrEdit(myForm)">
             <div class="d-flex flex-column flex-md-row gap-4">
-                <div class="w-50">
+                <div class="w-100 w-md-50">
                     <input #myInput placeholder="Task title..." class="form-control" type="text" name="title" required ngModel/>
                 </div>
-                <div class="w-50 align-self-end">
+                <div class="w-100 w-md-50 align-self-end">
                     <select id="priority" class="form-control" name="priority" required ngModel>
                         <option value="" disabled selected hidden>Priority Level</option>
                         <option value="low">Low</option>
@@ -18,9 +18,9 @@
                     </select>
                 </div>
             </div>
-            <div class="d-flex gap-4 my-2">
-                <div class="w-50">
-                    <select id="assignedTo" class="form-control" name="assignedTo" required ngModel>
+            <div class="d-flex flex-column flex-md-row gap-4 my-2">
+                <div class="w-100 w-md-50">
+                    <select id="assignedTo" class="form-control w-100" name="assignedTo" required ngModel>
                         <option value="" disabled selected hidden>Assigned To</option>
                         <option value="trainee">Trainee</option>
                         <option value="junior">Junior</option>
@@ -28,7 +28,7 @@
                         <option value="master">Master</option>
                     </select>
                 </div>
-                <div class="w-50">
+                <div class="w-100 w-md-50">
                     <select id="status" class="form-control" name="status" required ngModel>
                         <option value="" disabled selected hidden>Status</option>
                         <option value="started">Started</option>
